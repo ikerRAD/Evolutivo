@@ -186,72 +186,7 @@ def evoSAT(num_variables, clauses, iterations = 1000, population = 100):
     return (bestsol, bestobj, itsiter)
         
         
-        
-        
-     
-tupla1 = list_minisat2list_our_sat ('instancias/1-unsat.cnf')
-tupla2 = list_minisat2list_our_sat ('instancias/2-sat.cnf')    
-tupla3 = list_minisat2list_our_sat ('instancias/3-sat.cnf')
-tupla4 = list_minisat2list_our_sat ('instancias/4-sat.cnf')
-tupla5 = list_minisat2list_our_sat ('instancias/5-unsat.cnf')
-tupla6 = list_minisat2list_our_sat ('instancias/6-unsat.cnf')
-tupla7 = list_minisat2list_our_sat ('instancias/7-unsat.cnf')
-tupla8 = list_minisat2list_our_sat ('instancias/8-unsat.cnf')
-tupla9 = list_minisat2list_our_sat ('instancias/9-unsat.cnf')
-tupla10 = list_minisat2list_our_sat ('instancias/10-unsat.cnf')
 
-start_time = time()
-print(evoSAT(tupla1[0], tupla1[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 1 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla2[0], tupla2[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 2 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla3[0], tupla3[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 3 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla4[0], tupla4[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 4 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla5[0], tupla5[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 5 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla6[0], tupla6[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 6 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla7[0], tupla7[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 7 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla8[0], tupla8[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 8 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla9[0], tupla9[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 9 : %0.10f seconds." % elapsed_time) 
-
-start_time = time()
-print(evoSAT(tupla10[0], tupla10[1]))
-elapsed_time = time() - start_time   
-print("Elapsed time 10 : %0.10f seconds." % elapsed_time)      
-        
-        
-        
         
         
         
