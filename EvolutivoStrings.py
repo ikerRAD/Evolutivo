@@ -6,7 +6,7 @@ Created on Wed Nov 24 15:47:54 2021
 """
 import random
 MUTACION_R = 0.2
-MUTACION_S = 0.1
+MUTACION_S = 0.12
 GENES = " abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890,.-;:_¿?¡!áéíóú"
 
 
@@ -104,7 +104,7 @@ class Individuo:
         if random.random() <= MUTACION_R:
             
             loops = int(len(self.genoma)*MUTACION_S)
-            loops = min(loops, len(self.genoma))
+            loops = max(min(loops, len(self.genoma)), 1)
             tomute = list(range(len(self.genoma)))
             
             for _ in range(loops):
