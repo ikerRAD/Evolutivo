@@ -6,8 +6,6 @@ Created on Thu Nov 18 16:32:09 2021
 """
 
 import random
-from tools import list_minisat2list_our_sat
-from time import time
 
 '''Function that computes how many clauses are false with the assignation '''
 def objectiveVal(num_variables, clauses, assignation):
@@ -143,7 +141,10 @@ def reproduce(oldgen, population, num_variables, n_clauses, clauses, mutation = 
     #all the new generation is prepared, we return the new generation and its best specimen
     return (newgen, bestobj, bestchild)
 
-
+#indicar número distinto de variables y las clausulas. Por ejemplo:
+# num_variables = 6, clauses = [[1,2,-3],[4,2,6,5]]
+#representa este problema SAT:
+#(x1 or x2 or not x3) and ( x4 or x2 or x6 or x5)
 def evoSAT(num_variables, clauses, iterations = 1000, population = 100):
     
     #We set the global values
